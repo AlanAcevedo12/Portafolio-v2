@@ -1,0 +1,125 @@
+#slider{
+    margin: auto;
+    display: flex;
+    /* background-color: brown; */
+    position: relative;
+}
+
+.botones{
+    z-index: 4;
+    position: absolute;
+    height: 27rem;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#prev{
+    left: 0;
+}
+
+#prev:hover{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#next{
+    right: 0;
+}
+
+#next:hover{
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#appClima{
+    background-image: url("../../Assets/app-clima.png");
+}
+#henryDogsImg{
+    background-image: url("../../Assets/henry-dogs.png");
+}
+#proRopaImg{
+    background-image: url("../../Assets/pro-ropa.png");
+}
+
+.capturaProyectos{
+    margin: auto;
+    height: 27rem;
+    width: 48rem;
+    background-size: cover;
+    /* margin-bottom: 4rem; */
+}
+
+@keyframes myAnim2 {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+#infoContainer{
+    margin: auto;
+    width: 70%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color:whitesmoke;
+    text-align: justify;
+}
+
+.tituloInfo{
+    text-align: center;
+}
+
+.linkContacto{
+    text-decoration: none;
+    color: rgb(148, 203, 255);
+}
+
+.textoContacto{
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px){
+    .capturaProyectos{
+        margin: auto;
+        height: 47vw;
+        width: 90vw;
+        background-size: cover;
+        /* margin-bottom: 4rem; */
+    }
+
+    .botones{
+        z-index: 4;
+        position: absolute;
+        height: 47vw;
+        width: 20%;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    #infoContainer{
+        margin: auto;
+        width: 80%;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(3px);
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        color:whitesmoke;
+        text-align: justify;
+    }
+}

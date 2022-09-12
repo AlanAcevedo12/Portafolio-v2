@@ -1,0 +1,16 @@
+#FooterContainer{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    display: flex;
+    text-align: center;
+    height: 5rem;
+    width: 70%;
+    margin: auto;
+}
+.titulo{
+    margin: auto;
+    margin-right: 2rem;
+    color:whitesmoke;
+    font-family: fuenteTexto;
+    font-weight: 500;
+}

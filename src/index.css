@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none; 
+}
+
+@font-face {
+  font-family: fuentePrincipal;
+  src: url("./Assets/PeaceBoyDemoSansSerif.ttf");
+}
+
+@font-face {
+  font-family: fuenteTexto;
+  src: url("./Assets/Louis\ George\ Cafe\ Light.ttf");
+}
+
+h1{
+  margin: 0;
+}
