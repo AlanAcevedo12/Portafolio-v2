@@ -6,15 +6,15 @@ import Projects from "../../Components/Projects/Projects";
 import Contact from "../../Components/Contact/Contact";
 import NavBar from "../../Components/NavBar/NavBar";
 import { useState } from "react";
-// import img from "../../Assets/ManchasPintura/ManchaPintura1.png"
+import pdf from "../../Assets/Alan-Acevedo-Curriculum.pdf"
 
 function Home() {
   document.title = "Portafolio - Alan Acevedo";
   const [dark, setDark] = useState(false);
 
-  function darkModeHandler(){
-    if(dark)  setDark(false);
-    if(!dark) setDark(true); 
+  function darkModeHandler() {
+    if (dark) setDark(false);
+    if (!dark) setDark(true);
   }
 
   return (
@@ -24,7 +24,7 @@ function Home() {
           id={estilos.mancha}
           src={require("../../Assets/ManchasPintura/ManchaPintura1.png")} />
       </div>
-      <div style={{ position: "fixed", width:"100%", display: "flex", justifyContent: "flex-end", zIndex: 5 }}>
+      <div style={{ position: "fixed", width: "100%", display: "flex", justifyContent: "flex-end", zIndex: 5 }}>
         <NavBar />
       </div>
       <div style={{ width: "100%", /*backgroundColor: "red",*/ position: "absolute" }}>
@@ -33,15 +33,17 @@ function Home() {
           src={require("../../Assets/ManchasPintura/ManchaPintura2.png")} />
       </div>
       <Title />
-      <About/>
+      <About />
       <Technologies />
       <Projects />
       <Contact />
       {
-        dark === false ? <img src={require("../../Assets/ManchasPintura/400ppi/dark.png")} id={estilos.switch} onClick={darkModeHandler}/>
-        :
-        <img src={require("../../Assets/ManchasPintura/400ppi/light.png")} id={estilos.switch} onClick={darkModeHandler}/>
+        dark === false ? <img src={require("../../Assets/ManchasPintura/400ppi/dark.png")} id={estilos.switch} onClick={darkModeHandler} />
+          :
+          <img src={require("../../Assets/ManchasPintura/400ppi/light.png")} id={estilos.switch} onClick={darkModeHandler} />
       }
+      <div>
+      </div>
     </div>
   );
 }

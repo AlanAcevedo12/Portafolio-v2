@@ -1,4 +1,5 @@
 import estilos from "./Contact.module.css";
+import pdf from "../../Assets/Alan-Acevedo-Curriculum.pdf"
 
 function Contact() {
     return (
@@ -14,6 +15,9 @@ function Contact() {
                 </h1>
             </div>
             <div id={estilos.contenedorTexto}>
+                <p className={estilos.textoContacto}>Curriculum:{" "}
+                    <a href={pdf} target="_blank"  className={estilos.linkContacto}>Descargar</a>
+                </p>
                 <p className={estilos.textoContacto}>Mail:{" "}
                     <a href="mailto:alanacevedo2001@hotmail.com" className={estilos.linkContacto} target="blank"> alanacevedo2001@hotmail.com</a>
                 </p>
