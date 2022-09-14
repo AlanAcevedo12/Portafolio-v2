@@ -1,0 +1,43 @@
+#HomeContainer {
+    background-color: #EAEDED;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: fuentePrincipal;
+    font-size: 1.6rem;
+}
+
+#HomeContainerDark{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: fuentePrincipal;
+    font-size: 1.6rem;
+    color: white;
+}
+
+#mancha {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    fill: blue;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -90px;
+}
+
+#mancha2 {
+    width: 400px;
+    height: 400px;
+    /* background-color: blue; */
+    float: right;
+    margin-top: 400px;
+    margin-right: -150px;
+}
+
+#switch{
+    position: fixed;
+    width: 200px;
+    bottom: 0;
+}

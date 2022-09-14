@@ -1,0 +1,49 @@
+#mancha {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    fill: blue;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -90px;
+}
+
+#contenedorTitulo{
+    width: 100%;
+    margin-top: 30vh;
+    font-size: 5rem;
+    font-weight: 100;
+    /* background-color: red; */
+}
+
+#titulo{
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+#contenedorLinea{
+    width: 100%;
+    display: flex;
+    /* margin-top: 1px; */
+    /* background-color: red; */
+}
+
+#linea{
+    height: 15px;
+    margin: auto;
+}
+
+#contenedorSubTitulo{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 100;
+    /* background-color: red; */
+}
+
+#subTitulo{
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}

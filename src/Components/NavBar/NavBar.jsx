@@ -2,26 +2,37 @@ import { Link } from "react-router-dom";
 import estilos from "./NavBar.module.css";
 
 function NavBar() {
-    return (
-      <nav id={estilos.NavContainer}>
-        <div className={estilos.contenedorTitulo}>
-          <a href="#home" className={estilos.a}>
-            <h1 className={estilos.tituloNav}>Home</h1>
-          </a>
-        </div>
-        <div className={estilos.contenedorTitulo}>
-          <a href="#proyectos" className={estilos.a}>
-            <h1 className={estilos.tituloNav}>Proyectos</h1>
-          </a>
-        </div>
-        <div className={estilos.contenedorTitulo}>
-          <a href="#contacto" className={estilos.a}>
-            <h1 className={estilos.tituloNav}>Contacto</h1>
-          </a>
-        </div>
-      </nav>
-    );
+
+  function onPressHandler(e) {
+    let element;
+    element = document.querySelector(`[name=${e.target.innerHTML}]`);
+
+    element.scrollIntoView({
+      blok: "start",
+      behavior: "smooth",
+    });
   }
-  
-  export default NavBar;
-  
+
+  return (
+    <nav id={estilos.NavContainer}>
+      <img id={estilos.imagen}
+        src={require("../../Assets/ManchasPintura/nav.png")} />
+      <div id={estilos.contenedorSubTitulo}>
+        <h1 id={estilos.subTitulo} onClick={onPressHandler} name="NavPerfil">
+          Perfil
+        </h1>
+        <h1 id={estilos.subTitulo} onClick={onPressHandler} name="NavTecnologias">
+          Tecnologias
+        </h1>
+        <h1 id={estilos.subTitulo} onClick={onPressHandler} name="NavProyectos">
+          Proyectos
+        </h1>
+        <h1 id={estilos.subTitulo} onClick={onPressHandler} name="NavContacto">
+          Contacto
+        </h1>
+      </div>
+    </nav>
+  );
+}
+
+export default NavBar;

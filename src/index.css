@@ -5,19 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  user-select: none; 
+  user-select: none;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
 }
 
 @font-face {
   font-family: fuentePrincipal;
-  src: url("./Assets/PeaceBoyDemoSansSerif.ttf");
+  src: url("./Assets/RedRock.ttf");
 }
 
 @font-face {
   font-family: fuenteTexto;
-  src: url("./Assets/Louis\ George\ Cafe\ Light.ttf");
+  src: url("./Assets/Brushaff.otf");
 }
 
-h1{
+h1 {
   margin: 0;
 }
