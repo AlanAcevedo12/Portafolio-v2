@@ -18,7 +18,7 @@ function Home() {
   }
 
   return (
-    <div id={dark === true ? estilos.HomeContainer : estilos.HomeContainerDark}>
+    <div id={dark === false ? estilos.HomeContainer : estilos.HomeContainerDark}>
       <div>
         <img
           id={estilos.mancha}
@@ -38,7 +38,7 @@ function Home() {
       <Projects />
       <Contact />
       {
-        dark === true ? <img src={require("../../Assets/ManchasPintura/400ppi/dark.png")} id={estilos.switch} onClick={darkModeHandler}/>
+        dark === false ? <img src={require("../../Assets/ManchasPintura/400ppi/dark.png")} id={estilos.switch} onClick={darkModeHandler}/>
         :
         <img src={require("../../Assets/ManchasPintura/400ppi/light.png")} id={estilos.switch} onClick={darkModeHandler}/>
       }
