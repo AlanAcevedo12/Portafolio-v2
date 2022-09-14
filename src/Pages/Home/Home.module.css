@@ -41,3 +41,7 @@
     width: 200px;
     bottom: 0;
 }
+
+#switch:hover{
+    cursor: pointer;
+}
