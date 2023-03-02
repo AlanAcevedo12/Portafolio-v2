@@ -92,6 +92,7 @@
         font-weight: 100;
         /* background-color: red; */
         font-family: fuenteTexto;
+        word-wrap: break-word;
     }
   }
   

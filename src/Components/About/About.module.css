@@ -120,4 +120,24 @@
         font-weight: 100;
         text-align: jus;
     }
+
+    #fotoContainer {
+        width: 50vw;
+        height: 50vw;
+        margin: auto;
+        /* margin-top: 1rem; */
+        font-size: 3rem;
+        font-weight: 100;
+        /* background-color: red; */
+        border-radius: 50%;
+        overflow: hidden;
+        border-color: darkcyan;
+        border-width: 5px;
+        border-style: solid;
+    }
+
+    #foto {
+        height: 100%;
+        translate: -7%;
+    }
 }
