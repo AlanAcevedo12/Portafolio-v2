@@ -24,10 +24,12 @@ function Home() {
           id={estilos.mancha}
           src={require("../../Assets/ManchasPintura/ManchaPintura1.png")} />
       </div>
-      <div style={{ position: "fixed", width: "100%", display: "flex", justifyContent: "flex-end", zIndex: 5 }}>
+      <div id={estilos.nav}
+        style={{ position: "fixed", width: "100%", display: "flex", justifyContent: "flex-end", zIndex: 5 }}
+      >
         <NavBar />
       </div>
-      <div style={{ width: "100%", /*backgroundColor: "red",*/ position: "absolute" }}>
+      <div style={{ width: "100%", position: "absolute", overflow: "hidden" }}>
         <img
           id={estilos.mancha2}
           src={require("../../Assets/ManchasPintura/ManchaPintura2.png")} />

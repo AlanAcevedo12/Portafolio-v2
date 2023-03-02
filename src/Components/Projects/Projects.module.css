@@ -90,3 +90,48 @@
     height: 300px;
     /* translate: -25px; */
 }
+
+@media screen and (max-width: 1024px) {
+    #infoContainer{
+        display: flex;
+        flex-direction: column;
+        /* background-color: aqua; */
+        width: 90%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    #fotoContainer{
+        margin: auto;
+        /* background-color: red; */
+        height: auto;
+    }
+
+    #foto{
+        width: 100%;
+        height: auto;
+    }
+
+    #contenedorTexto{
+        width: 90%;
+        margin: auto;
+        /* margin-top: 1rem; */
+        font-size: 3rem;
+        font-weight: 100;
+        /* background-color: red; */
+        font-family: fuenteTexto;
+    }
+    
+    #texto{
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    #contenedorLinea{
+        visibility: hidden;
+    }
+  }
+  

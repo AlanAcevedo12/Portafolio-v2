@@ -84,3 +84,12 @@
     margin-top: 6rem;
     margin-left: 7rem;
 }
+
+
+@media screen and (max-width: 1024px) {
+    #contenedorManchas{
+        visibility: hidden;
+        display: none;
+    }
+  }
+  

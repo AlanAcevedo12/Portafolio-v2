@@ -8,7 +8,7 @@
 }
 
 
-#contenedorTitulo{
+#contenedorTitulo {
     width: 100%;
     margin-top: 4rem;
     font-size: 5rem;
@@ -16,13 +16,13 @@
     /* background-color: red; */
 }
 
-#titulo{
+#titulo {
     font-size: 3rem;
     font-weight: 100;
     text-align: center;
 }
 
-#infoContainer{
+#infoContainer {
     display: flex;
     flex-direction: row;
     /* background-color: aqua; */
@@ -32,7 +32,7 @@
     margin-top: 2rem;
 }
 
-#contenedorLinea{
+#contenedorLinea {
     /* width: 10%; */
     display: flex;
     /* margin-top: 1px; */
@@ -40,24 +40,24 @@
     position: absolute;
 }
 
-#linea{
+#linea {
     width: 10px;
     margin: auto;
 }
 
-#contenedorLinea1{
+#contenedorLinea1 {
     width: 100%;
     display: flex;
 }
 
-#linea1{
+#linea1 {
     height: 15px;
     width: 90%;
     margin: auto;
 }
 
 
-#contenedorTexto{
+#contenedorTexto {
     width: 30%;
     margin: auto;
     /* margin-top: 1rem; */
@@ -67,13 +67,13 @@
     font-family: fuenteTexto;
 }
 
-#texto{
+#texto {
     font-size: 2rem;
     font-weight: 100;
     text-align: center;
 }
 
-#fotoContainer{
+#fotoContainer {
     width: 300px;
     height: 300px;
     margin: auto;
@@ -88,7 +88,36 @@
     border-style: solid;
 }
 
-#foto{
+#foto {
     height: 300px;
     translate: -25px;
+}
+
+@media screen and (max-width: 1024px) {
+    #infoContainer {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+
+    #contenedorLinea {
+        visibility: hidden;
+    }
+
+    #contenedorTexto {
+        width: 90%;
+        margin: auto;
+        font-size: 3rem;
+        font-weight: 100;
+        font-family: fuenteTexto;
+    }
+
+    #texto {
+        font-size: 2rem;
+        font-weight: 100;
+        text-align: jus;
+    }
 }

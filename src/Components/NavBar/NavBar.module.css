@@ -1,6 +1,7 @@
 #NavContainer {
     width: 40%;
     /* height: 5rem; */
+    /* background-color: red; */
 }
 
 #imagen {
@@ -36,3 +37,4 @@
     color: #BFC9CA;
     cursor: pointer;
 }
+
